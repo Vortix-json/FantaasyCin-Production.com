@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Ciné Production</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const subject = "Commande Montage Vidéo";
+            const body = `${message}\n\n${name}`;
+
+            const mailtoLink = `mailto:fantasy.cine.pf@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            window.location.href = mailtoLink;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="FantasyCiné Logo">
+        <h1>Fantasy Ciné Production</h1>
+    </header>
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Me Contacter</a>
+    </nav>
+    <section id="intro" class="intro">
+        <h1>À propos de moi</h1>
+        <p>Je suis un vidéaste passionné par la capture des moments les plus précieux et la création de vidéos captivantes. Explorez mon portfolio pour découvrir mes œuvres et les services que je propose.</p>
+    </section>
+    <section id="portfolio" class="gallery">
+        <a href="https://www.youtube.com/watch?v=i8ILaKKM1cg&list=PLsutsVlot0Oig-ri9g2UrLKTFck3YUwIB&index=1&pp=iAQB" target="_blank" class="gallery-item">
+            <img src="https://i.ytimg.com/vi/i8ILaKKM1cg/hqdefault.jpg?sqp=-oaymwE2CPYBEIoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhBIE0ofzAP&rs=AOn4CLAZfD5Ejj_aIgUkWrV00yNm0AQ_2g" alt="Vidéo 1">
+            <h3>Citizens of the world</h3>
+        </a>
+        <a href="https://www.youtube.com/watch?v=MNjf6rYD0JU&list=PLsutsVlot0Oig-ri9g2UrLKTFck3YUwIB&index=2&pp=iAQB" target="_blank" class="gallery-item">
+            <img src="https://i.ytimg.com/vi/MNjf6rYD0JU/hqdefault.jpg?sqp=-oaymwE2CPYBEIoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IEYoKzAP&rs=AOn4CLBc72d6wG_HReg4N1NYnQNaCnwkaA" alt="Vidéo 2">
+            <h3>Off semana hispanidad</h3>
+        </a>
+        <a href="https://www.youtube.com/watch?v=wXjHkDRR_Z4&list=PLsutsVlot0Oig-ri9g2UrLKTFck3YUwIB&index=3&pp=iAQB" target="_blank" class="gallery-item">
+            <img src="https://i.ytimg.com/vi/wXjHkDRR_Z4/hqdefault.jpg?sqp=-oaymwE2CPYBEIoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARh_IEQoLTAP&rs=AOn4CLB5ZB383CxHesEuck5pkdCXygGQaQ" alt="Vidéo 3">
+            <h3>Speeches Red Nose Day</h3>
+        </a>
+        <a href="https://www.youtube.com/watch?v=Ixhm5sM8gOU&list=PLsutsVlot0Oig-ri9g2UrLKTFck3YUwIB&index=4&pp=iAQB" target="_blank" class="gallery-item">
+            <img src="https://i.ytimg.com/vi/Ixhm5sM8gOU/hqdefault.jpg?sqp=-oaymwE2CPYBEIoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBtgiAAoAPigIMCAAQARhlIFEoSzAP&rs=AOn4CLBqFXVeu2Eu8qYV-th3FnEvZwmHgQ" alt="Vidéo 4">
+            <h3>Le Bar Salade</h3>
+        </a>
+        <a href="https://www.youtube.com/watch?v=F2gwTb1OY6Q&list=PLsutsVlot0Oig-ri9g2UrLKTFck3YUwIB&index=5&pp=iAQB" target="_blank" class="gallery-item">
+            <img src="https://i.ytimg.com/vi/F2gwTb1OY6Q/hqdefault.jpg?sqp=-oaymwE2CPYBEIoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFMoQzAP&rs=AOn4CLCuqakY70Utnd-b0MYdjgHWUY_ckw" alt="Vidéo 5">
+            <h3>L'atelier Pizza</h3>
+        </a>
+        <a href="https://www.youtube.com/watch?v=veXTxyNQhsg&list=PLsutsVlot0Oig-ri9g2UrLKTFck3YUwIB&index=6&pp=iAQB" target="_blank" class="gallery-item">
+            <img src="https://i.ytimg.com/vi/veXTxyNQhsg/hqdefault.jpg?sqp=-oaymwE2CPYBEIoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhWIGUoZTAP&rs=AOn4CLAQ9vFL3Y2MssPZb3Aw-Fpg_J693w" alt="Vidéo 6">
+            <h3>FA'AMA - KTH (Clip Officiel)</h3>
+        </a>
+    </section>
+        <section id="services">
+        <div class="services">
+            <h1>Services</h1>
+            <div class="service-item">
+                <h2>Formule 1 → 6000 XPF (50€)</h2>
+                <ul>
+                    <li>Montage dynamique</li>
+                    <li>Transition fluide</li>
+                    <li>3 Textes maximum</li>
+                    <li>Colorimétrie</li>
+                    <li>Sound design</li>
+                    <li>Durée : 30s</li>
+                </ul>
+            </div>
+            <div class="service-item">
+                <h2>Formule 2 → 12000 XPF (100€)</h2>
+                <ul>
+                    <li>Montage dynamique</li>
+                    <li>Transition fluide</li>
+                    <li>5 Textes maximum</li>
+                    <li>Plan stabilisateur/caméra/téléphone</li>
+                    <li>Colorimétrie</li>
+                    <li>Image/vidéo imposé</li>
+                    <li>Image/vidéo en mer</li>
+                    <li>Images/vidéo sous marine</li>
+                    <li>Prise de vue au sol</li>
+                    <li>Incrustation fond vert</li>
+                    <li>Sound design</li>
+                    <li>Durée : 1 min 10s</li>
+                </ul>
+            </div>
+            <div class="service-item">
+                <h2>Formule 3 → 24000 XPF (200€)</h2>
+                <ul>
+                    <li>Montage dynamique</li>
+                    <li>Transition fluide</li>
+                    <li>Textes illimités (raisonnablement)</li>
+                    <li>Plan stabilisateur/caméra/téléphone</li>
+                    <li>Colorimétrie</li>
+                    <li>Image/vidéo imposé</li>
+                    <li>Image/vidéo en mer</li>
+                    <li>Images/vidéo sous marine</li>
+                    <li>Prise de vue au sol</li>
+                    <li>Incrustation fond vert</li>
+                    <li>Sound design</li>
+                    <li>Musique personnalisée</li>
+                    <li>Vidéo au ralenti</li>
+                    <li>Voix off</li>
+                    <li>Durée : 2 min 10s</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-form">
+            <h1>Me Contacter</h1>
+            <form action="javascript:void(0);" onsubmit="sendEmail()">
+                <input type="text" id="name" placeholder="Votre nom" required>
+                <input type="email" id="email" placeholder="Votre email" required>
+                <textarea id="message" placeholder="Votre message"></textarea>
+                <button type="submit">Envoyer par email</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>FantasyCiné Production © 2024</p>
+        <ul class="wrapper">
+            <a href="https://www.facebook.com/people/Fantasy-Cin%C3%A9/61556669477106/" target="_blank">
+                <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </li>
+            </a>
+            <a href="https://www.instagram.com/fantasy.cine.production/" target="_blank">
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </li>
+            </a>
+            <a href="https://www.youtube.com/@FantasyCine" target="_blank">
+            <li class="icon youtube">
+                <span class="tooltip">YouTube</span>
+                <span><i class="fab fa-youtube"></i></span>
+            </li>
+            </a>
+        </ul>
+    </footer>
+</body>
+</html>
